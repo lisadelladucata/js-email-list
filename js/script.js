@@ -1,5 +1,6 @@
 // DOM ELEMENTS 
 const emailListElm = document.getElementById('emailList');
+const emailBtnElm = document.getElementById('emailBtn');
 
 // FUNCTIONS 
 function randomEmail(){
@@ -14,4 +15,7 @@ function randomEmail(){
     }
 }
 
-randomEmail();
+// EVENTS 
+emailBtnElm.addEventListener('click', function() {
+    randomEmail();
+});
